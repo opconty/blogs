@@ -480,3 +480,12 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 **欢迎关注公众号：laygin (Welcome to follow the official account: laygin)**
 
 ![](qrcode_for_ggzh.jpg)
+
+----
+
+**欢迎加入技术交流群，共同交流技术、分享资源（如果二维码过期，欢迎在公号中留言，便于发送二维码）**
+
+![](technical_exchange_group.jpg)
+
+
+- https://github.com/opconty/blogs
