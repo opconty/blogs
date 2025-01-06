@@ -1,6 +1,8 @@
 # **`laygin`** 博客文章记录及资源（Blog Post Records & Resources）
 
-[toc]
+<style> #TOC ul { list-style-type: none; } </style>
+
+[TOC]
 
 ## 多模态大模型（MultiModal Large Models）
 ### [多模态预训练模型串烧1：CLIP、ViLT、ALBEF、VLMo](https://mp.weixin.qq.com/s/bUkQA27OphCleiqREM8C3A)
