@@ -33,7 +33,7 @@
     + [用AI零代码制作音乐MV，分享免费工具，详细教程](#-ai-------mv------------)
     + [如何使用AI制作诗词朗诵、讲故事视频？需要哪些技术？](#----ai--------------------)
     + [啥是扩散模型？](#-------)
-    + [[Stable Diffusion笔记及使用示例](https://mp.weixin.qq.com/s/4lswN9zrXtAfmm3nqp-sEA)](#-stable-diffusion---------https---mpweixinqqcom-s-4lswn9zrxtafmm3nqp-sea-)
+    + [Stable Diffusion笔记及使用示例](#stable-diffusion-------)
   * [Pytorch & Python](#pytorch---python)
     + [深入理解Transformer中的自注意力机制，step by step，in code](#----transformer---------step-by-step-in-code)
     + [扫清障碍， 通过pytorch代码深入理解transformer](#--------pytorch------transformer)
@@ -87,30 +87,31 @@
     + [善用markdown让写文档如虎添翼](#--markdown--------)
     + [微小说：路边草](#-------)
 
+
 ## 多模态大模型（MultiModal Large Models）
 ### 多模态预训练模型串烧1：CLIP、ViLT、ALBEF、VLMo
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/bUkQA27OphCleiqREM8C3A)
 
-所谓多模态就是融合了不止一种模态的信息，比如图像、文本、音频和视频等，现阶段最常见的就是Vision+Language的形式。
-本文记录一下基于Transformer 的图文多模态预训练（Vision-and-Language Pre-training (VLP) ）基础模型（该模型一旦训练好就可以用于VL下游任务，比如图文检索、视觉问答等，还有比较实用的Document Understanding，分析文档布局、提取文档信息并结构化输出）。
-本文分析了几个经典模型（CLIP、ViLT、ALBEF、VLMo）的架构：视觉编码器、文本编码器和特征融合，以及使用的目标函数、主要贡献等等。
+> 所谓多模态就是融合了不止一种模态的信息，比如图像、文本、音频和视频等，现阶段最常见的就是Vision+Language的形式。
+> 本文记录一下基于Transformer 的图文多模态预训练（Vision-and-Language Pre-training (VLP) ）基础模型（该模型一旦训练好就可以用于VL下游任务，比如图文检索、视觉问答等，还有比较实用的Document Understanding，分析文档布局、提取文档信息并结构化输出）。
+> 本文分析了几个经典模型（CLIP、ViLT、ALBEF、VLMo）的架构：视觉编码器、文本编码器和特征融合，以及使用的目标函数、主要贡献等等。
 
 ### 多模态预训练模型串烧2：BLIP
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/ndgl8NsoD5SdmKK-iJ86rw)
 
-其主要贡献有：
-- （模型方面）多模态混合的编码器-解码器结构（Multimodal mixture of Encoder-Decoder (MED)）
-- （数据方面）描述生成和过滤（Captioning and Filtering (CapFilt)）
+> 其主要贡献有：
+> - （模型方面）多模态混合的编码器-解码器结构（Multimodal mixture of Encoder-Decoder (MED)）
+> - （数据方面）描述生成和过滤（Captioning and Filtering (CapFilt)）
 
 ### 多模态预训练模型串烧3：CoCa
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/5fGxhdW0TuI8aJi-t8U0XQ)
 
-值得一提的是，CoCa采用了非常吸引眼球和震撼的蜘蛛网图（也称为多边形图或雷达图）来展现多个任务上的结果。CoCa和ALBEF的结构很相似，ALBEF和CoCa在图像侧的编码是相同的，区别在于文本侧，ALBEF采用encoder，将其拆分为两部分，一个用于文本特征编码，一个用于多模态融合，而CoCa采用的是decoder。
+> 值得一提的是，CoCa采用了非常吸引眼球和震撼的蜘蛛网图（也称为多边形图或雷达图）来展现多个任务上的结果。CoCa和ALBEF的结构很相似，ALBEF和CoCa在图像侧的编码是相同的，区别在于文本侧，ALBEF采用encoder，将其拆分为两部分，一个用于文本特征编码，一个用于多模态融合，而CoCa采用的是decoder。
 
 ### 多模态预训练模型串烧4：BEIT-3
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/z9fRrhOeB5jKbCgUSxfcyg)
 
-作者团队都来自 Microsoft Corporation，如果还有印象，该文作者曾提出过VLMo那篇工作，所以在BEIT-3中会发现有一些VLMo的痕迹（实际上VLMo中的MoME，在BEIT-3中成为Multiway Transformer，只是名字变了而已；两者不同的是预训练的任务，VLMo用了三个，BEIT-3只用一个）
+> 作者团队都来自 Microsoft Corporation，如果还有印象，该文作者曾提出过VLMo那篇工作，所以在BEIT-3中会发现有一些VLMo的痕迹（实际上VLMo中的MoME，在BEIT-3中成为Multiway Transformer，只是名字变了而已；两者不同的是预训练的任务，VLMo用了三个，BEIT-3只用一个）
 文中开篇就提出语言、视觉和多模态预训练的大一统趋势。该文从三个方面来推进大一统：骨干网络结构，预训练任务和模型扩大。
 
 ### 多模态预训练模型串烧5：PaLI、SigLIP、PaLI-X、PaLI-3
@@ -283,8 +284,8 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 ### 啥是扩散模型？
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/zPhNSttjneu1kPseDEqYjQ)
 
-### [Stable Diffusion笔记及使用示例](https://mp.weixin.qq.com/s/4lswN9zrXtAfmm3nqp-sEA)
-[:page_facing_up:原文 blog post]
+### Stable Diffusion笔记及使用示例
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/4lswN9zrXtAfmm3nqp-sEA)
 
 ## Pytorch & Python
 ### 深入理解Transformer中的自注意力机制，step by step，in code
@@ -477,4 +478,5 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 ----
 
 **欢迎关注公众号：laygin (Welcome to follow the official account: laygin)**
+
 ![](qrcode_for_ggzh.jpg)
