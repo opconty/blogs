@@ -1,92 +1,218 @@
 # **`laygin`** 博客文章记录及资源（Blog Post Records & Resources）
 
-- [**`laygin`** 博客文章记录及资源（Blog Post Records & Resources）](#---laygin--------------blog-post-records---resources-)
-  * [多模态大模型（MultiModal Large Models）](#-------multimodal-large-models-)
-    + [多模态预训练模型串烧1：CLIP、ViLT、ALBEF、VLMo](#----------1-clip-vilt-albef-vlmo)
-    + [多模态预训练模型串烧2：BLIP](#----------2-blip)
-    + [多模态预训练模型串烧3：CoCa](#----------3-coca)
-    + [多模态预训练模型串烧4：BEIT-3](#----------4-beit-3)
-    + [多模态预训练模型串烧5：PaLI、SigLIP、PaLI-X、PaLI-3](#----------5-pali-siglip-pali-x-pali-3)
-    + [多模态预训练模型串烧6：MDETR、GLIP](#----------6-mdetr-glip)
-    + [多模态预训练模型串烧7：GroundingDINO及与SAM的联合使用例子](#----------7-groundingdino--sam-------)
-    + [聊聊文档智能（Document AI）](#-------document-ai-)
-    + [多模态大模型：miniGPT-4、miniGPT-v2](#-------minigpt-4-minigpt-v2)
-    + [多模态大模型：LLaVA系列及应用示例](#-------llava-------)
-    + [CLIP论文笔记及简单的使用示例](#clip------------)
-  * [大语言模型（LLM）](#------llm-)
-    + [大语言模型微调（Fine-tune LLMs）](#--------fine-tune-llms-)
-    + [基于Llama 3的few-shot实现证件关键信息提取](#--llama-3-few-shot----------)
-    + [LLM部署和基于RAG的应用](#llm-----rag---)
-    + [预训练大语言模型（Pretrain LLMs）](#---------pretrain-llms-)
-    + [大语言模型的函数调用（Function calling with LLMs）](#-----------function-calling-with-llms-)
-    + [Llama 3 简介及使用demo](#llama-3------demo)
-    + [AI Agent？智能体简介](#ai-agent------)
-    + [可以运行在CPU上的聊天大模型：GPT4ALL](#-----cpu--------gpt4all)
-    + [大模型微调：LoRA和DoRA的原理及pytorch实现](#------lora-dora----pytorch--)
-  * [视觉大模型（LVM）](#------lvm-)
-    + [视觉大模型：SAM（Segment Anything）及示例](#------sam-segment-anything----)
-    + [视觉大模型：PerSAM（一张图定制SAM）、MobileSAM（更小更快的SAM）](#------persam------sam--mobilesam------sam-)
-  * [AIGC](#aigc)
-    + [空间可控的文生图模型：ReCo、GLIGEN、ControlNet](#-----------reco-gligen-controlnet)
-    + [空间可控的文生图模型：UniControl、Uni-ControlNet](#-----------unicontrol-uni-controlnet)
-    + [聊聊Prompt Engineering，文生图模型如何生成惊艳的图片，以Stable Diffusion为例](#--prompt-engineering-----------------stable-diffusion--)
-    + [用AI零代码制作音乐MV，分享免费工具，详细教程](#-ai-------mv------------)
-    + [如何使用AI制作诗词朗诵、讲故事视频？需要哪些技术？](#----ai--------------------)
-    + [啥是扩散模型？](#-------)
-    + [Stable Diffusion笔记及使用示例](#stable-diffusion-------)
-  * [Pytorch & Python](#pytorch---python)
-    + [深入理解Transformer中的自注意力机制，step by step，in code](#----transformer---------step-by-step-in-code)
-    + [扫清障碍， 通过pytorch代码深入理解transformer](#--------pytorch------transformer)
-    + [通过代码了解加速pytorch训练的方法（一）：DP & DDP](#--------pytorch---------dp---ddp)
-    + [通过代码了解加速pytorch训练的方法（二）：自动混合精度AMP](#--------pytorch---------------amp)
-    + [通过代码了解加速pytorch训练的方法（三）：预加载数据](#--------pytorch--------------)
-    + [通过代码了解加速pytorch训练的方法（四）：DDP（通过命令行launch脚本）](#--------pytorch---------ddp------launch---)
-    + [通过代码了解加速pytorch训练的方法（五）：accelerate](#--------pytorch---------accelerate)
-    + [简单抓站的N种方式（一）-urllib与bs4](#-----n-------urllib-bs4)
-    + [简单抓站的N种方式（二）-requests与re](#-----n-------requests-re)
-    + [简单抓站的N种方式（三）-lxml与xpath](#-----n-------lxml-xpath)
-    + [超参数优化之前,让我们先来了解下贝叶斯优化方法](#-----------------------)
-    + [用python把玩一下数字签名和消息加密](#-python-------------)
-    + [用numpy一步步解释pytorch损失函数](#-numpy-----pytorch----)
-    + [重新认识矩阵乘法 - 站在吃饭和建模的角度](#---------------------)
-    + [文本识别应用CTC的束搜索解码方法](#------ctc--------)
-    + [文本识别中的CTC损失](#------ctc--)
-    + [OCR: WHAT AND HOW](#ocr--what-and-how)
-    + [证件检测算法的高效演进之路](#-------------)
-    + [深入理解证件图像信息自动化处理Pipeline](#---------------pipeline)
-    + [将图像作为序列：在伪证鉴别算法应用中的探索](#---------------------)
-    + [通过pytorch代码深入理解在伪证鉴别模型中所实现的注意力机制](#--pytorch-----------------------)
-    + [STD（Semantic Text Detector）：一种基于语义特征的场景文本检测方法](#std-semantic-text-detector-------------------)
-    + [STD++：一种基于语义特征的任意方向场景文本检测方法](#std------------------------)
-    + [如何打包发布Python项目，让全世界的人都能用](#------python------------)
-    + [如何在有限标注数据条件下利用自监督学习提升文本识别模型性能](#-----------------------------)
-  * [数据科学（Data Science）](#-----data-science-)
-    + [问鼎数据科学比赛之探索性数据分析（EDA）](#-----------------eda-)
-    + [问鼎数据科学比赛之特征工程（数值型特征）](#--------------------)
-    + [问鼎数据科学比赛之特征工程（类别特征）](#-------------------)
-    + [问鼎数据科学比赛之特征工程（时间空间特征）](#---------------------)
-    + [问鼎数据科学比赛之缺失值的处理](#---------------)
-  * [视频教程（Video Tutorial）](#-----video-tutorial-)
-    + [LLM部署和RAG-检索增强生成实践（完整视频）](#llm---rag---------------)
-    + [大语言模型微调（完整视频）](#-------------)
-    + [深入理解证件图像信息自动化处理Pipeline](#---------------pipeline-1)
-    + [证件定位算法：What and How？](#-------what-and-how-)
-    + [图像作为序列：伪证鉴别（english version）](#------------english-version-)
-    + [图像作为序列：伪证鉴别（中文）](#---------------)
-    + [深度学习算法在工业上的落地应用之不良品检测](#---------------------)
-    + [Grounding DINO和SAM结合使用的demo](#grounding-dino-sam-----demo)
-    + [PerSAM+MobileSAM证件分割应用案例](#persam-mobilesam--------)
-    + [cuda环境配置及pytorch安装](#cuda-----pytorch--)
-    + [菲律宾多种证件端到端信息提取算法演示](#------------------)
-    + [文献整理及论文笔记管理](#-----------)
-  * [其他（Others）](#---others-)
-    + [Latex备忘录](#latex---)
-    + [How to plot pie chart in LaTex](#how-to-plot-pie-chart-in-latex)
-    + [Latex备忘录：复杂表格、emoji、代码块等](#latex---------emoji-----)
-    + [换脸-人脸动作生成-人脸属性编辑](#----------------)
-    + [善用markdown让写文档如虎添翼](#--markdown--------)
-    + [微小说：路边草](#-------)
-
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#laygin-博客文章记录及资源blog-post-records-resources"
+id="toc-laygin-博客文章记录及资源blog-post-records-resources"><strong><code>laygin</code></strong>
+博客文章记录及资源（Blog Post Records &amp; Resources）</a>
+<ul>
+<li><a href="#多模态大模型multimodal-large-models"
+id="toc-多模态大模型multimodal-large-models">多模态大模型（MultiModal
+Large Models）</a>
+<ul>
+<li><a href="#多模态预训练模型串烧1clipviltalbefvlmo"
+id="toc-多模态预训练模型串烧1clipviltalbefvlmo">多模态预训练模型串烧1：CLIP、ViLT、ALBEF、VLMo</a></li>
+<li><a href="#多模态预训练模型串烧2blip"
+id="toc-多模态预训练模型串烧2blip">多模态预训练模型串烧2：BLIP</a></li>
+<li><a href="#多模态预训练模型串烧3coca"
+id="toc-多模态预训练模型串烧3coca">多模态预训练模型串烧3：CoCa</a></li>
+<li><a href="#多模态预训练模型串烧4beit-3"
+id="toc-多模态预训练模型串烧4beit-3">多模态预训练模型串烧4：BEIT-3</a></li>
+<li><a href="#多模态预训练模型串烧5palisiglippali-xpali-3"
+id="toc-多模态预训练模型串烧5palisiglippali-xpali-3">多模态预训练模型串烧5：PaLI、SigLIP、PaLI-X、PaLI-3</a></li>
+<li><a href="#多模态预训练模型串烧6mdetrglip"
+id="toc-多模态预训练模型串烧6mdetrglip">多模态预训练模型串烧6：MDETR、GLIP</a></li>
+<li><a href="#多模态预训练模型串烧7groundingdino及与sam的联合使用例子"
+id="toc-多模态预训练模型串烧7groundingdino及与sam的联合使用例子">多模态预训练模型串烧7：GroundingDINO及与SAM的联合使用例子</a></li>
+<li><a href="#聊聊文档智能document-ai"
+id="toc-聊聊文档智能document-ai">聊聊文档智能（Document AI）</a></li>
+<li><a href="#多模态大模型minigpt-4minigpt-v2"
+id="toc-多模态大模型minigpt-4minigpt-v2">多模态大模型：miniGPT-4、miniGPT-v2</a></li>
+<li><a href="#多模态大模型llava系列及应用示例"
+id="toc-多模态大模型llava系列及应用示例">多模态大模型：LLaVA系列及应用示例</a></li>
+<li><a href="#clip论文笔记及简单的使用示例"
+id="toc-clip论文笔记及简单的使用示例">CLIP论文笔记及简单的使用示例</a></li>
+</ul></li>
+<li><a href="#大语言模型llm"
+id="toc-大语言模型llm">大语言模型（LLM）</a>
+<ul>
+<li><a href="#大语言模型微调fine-tune-llms"
+id="toc-大语言模型微调fine-tune-llms">大语言模型微调（Fine-tune
+LLMs）</a></li>
+<li><a href="#基于llama-3的few-shot实现证件关键信息提取"
+id="toc-基于llama-3的few-shot实现证件关键信息提取">基于Llama
+3的few-shot实现证件关键信息提取</a></li>
+<li><a href="#llm部署和基于rag的应用"
+id="toc-llm部署和基于rag的应用">LLM部署和基于RAG的应用</a></li>
+<li><a href="#预训练大语言模型pretrain-llms"
+id="toc-预训练大语言模型pretrain-llms">预训练大语言模型（Pretrain
+LLMs）</a></li>
+<li><a href="#大语言模型的函数调用function-calling-with-llms"
+id="toc-大语言模型的函数调用function-calling-with-llms">大语言模型的函数调用（Function
+calling with LLMs）</a></li>
+<li><a href="#llama-3-简介及使用demo"
+id="toc-llama-3-简介及使用demo">Llama 3 简介及使用demo</a></li>
+<li><a href="#ai-agent智能体简介" id="toc-ai-agent智能体简介">AI
+Agent？智能体简介</a></li>
+<li><a href="#可以运行在cpu上的聊天大模型gpt4all"
+id="toc-可以运行在cpu上的聊天大模型gpt4all">可以运行在CPU上的聊天大模型：GPT4ALL</a></li>
+<li><a href="#大模型微调lora和dora的原理及pytorch实现"
+id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：LoRA和DoRA的原理及pytorch实现</a></li>
+</ul></li>
+<li><a href="#视觉大模型lvm"
+id="toc-视觉大模型lvm">视觉大模型（LVM）</a>
+<ul>
+<li><a href="#视觉大模型samsegment-anything及示例"
+id="toc-视觉大模型samsegment-anything及示例">视觉大模型：SAM（Segment
+Anything）及示例</a></li>
+<li><a href="#视觉大模型persam一张图定制sammobilesam更小更快的sam"
+id="toc-视觉大模型persam一张图定制sammobilesam更小更快的sam">视觉大模型：PerSAM（一张图定制SAM）、MobileSAM（更小更快的SAM）</a></li>
+</ul></li>
+<li><a href="#aigc" id="toc-aigc">AIGC</a>
+<ul>
+<li><a href="#空间可控的文生图模型recogligencontrolnet"
+id="toc-空间可控的文生图模型recogligencontrolnet">空间可控的文生图模型：ReCo、GLIGEN、ControlNet</a></li>
+<li><a href="#空间可控的文生图模型unicontroluni-controlnet"
+id="toc-空间可控的文生图模型unicontroluni-controlnet">空间可控的文生图模型：UniControl、Uni-ControlNet</a></li>
+<li><a
+href="#聊聊prompt-engineering文生图模型如何生成惊艳的图片以stable-diffusion为例"
+id="toc-聊聊prompt-engineering文生图模型如何生成惊艳的图片以stable-diffusion为例">聊聊Prompt
+Engineering，文生图模型如何生成惊艳的图片，以Stable
+Diffusion为例</a></li>
+<li><a href="#用ai零代码制作音乐mv分享免费工具详细教程"
+id="toc-用ai零代码制作音乐mv分享免费工具详细教程">用AI零代码制作音乐MV，分享免费工具，详细教程</a></li>
+<li><a href="#如何使用ai制作诗词朗诵讲故事视频需要哪些技术"
+id="toc-如何使用ai制作诗词朗诵讲故事视频需要哪些技术">如何使用AI制作诗词朗诵、讲故事视频？需要哪些技术？</a></li>
+<li><a href="#啥是扩散模型"
+id="toc-啥是扩散模型">啥是扩散模型？</a></li>
+<li><a href="#stable-diffusion笔记及使用示例"
+id="toc-stable-diffusion笔记及使用示例">Stable
+Diffusion笔记及使用示例</a></li>
+</ul></li>
+<li><a href="#pytorch-python" id="toc-pytorch-python">Pytorch &amp;
+Python</a>
+<ul>
+<li><a href="#深入理解transformer中的自注意力机制step-by-stepin-code"
+id="toc-深入理解transformer中的自注意力机制step-by-stepin-code">深入理解Transformer中的自注意力机制，step
+by step，in code</a></li>
+<li><a href="#扫清障碍-通过pytorch代码深入理解transformer"
+id="toc-扫清障碍-通过pytorch代码深入理解transformer">扫清障碍，
+通过pytorch代码深入理解transformer</a></li>
+<li><a href="#通过代码了解加速pytorch训练的方法一dp-ddp"
+id="toc-通过代码了解加速pytorch训练的方法一dp-ddp">通过代码了解加速pytorch训练的方法（一）：DP
+&amp; DDP</a></li>
+<li><a href="#通过代码了解加速pytorch训练的方法二自动混合精度amp"
+id="toc-通过代码了解加速pytorch训练的方法二自动混合精度amp">通过代码了解加速pytorch训练的方法（二）：自动混合精度AMP</a></li>
+<li><a href="#通过代码了解加速pytorch训练的方法三预加载数据"
+id="toc-通过代码了解加速pytorch训练的方法三预加载数据">通过代码了解加速pytorch训练的方法（三）：预加载数据</a></li>
+<li><a
+href="#通过代码了解加速pytorch训练的方法四ddp通过命令行launch脚本"
+id="toc-通过代码了解加速pytorch训练的方法四ddp通过命令行launch脚本">通过代码了解加速pytorch训练的方法（四）：DDP（通过命令行launch脚本）</a></li>
+<li><a href="#通过代码了解加速pytorch训练的方法五accelerate"
+id="toc-通过代码了解加速pytorch训练的方法五accelerate">通过代码了解加速pytorch训练的方法（五）：accelerate</a></li>
+<li><a href="#简单抓站的n种方式一-urllib与bs4"
+id="toc-简单抓站的n种方式一-urllib与bs4">简单抓站的N种方式（一）-urllib与bs4</a></li>
+<li><a href="#简单抓站的n种方式二-requests与re"
+id="toc-简单抓站的n种方式二-requests与re">简单抓站的N种方式（二）-requests与re</a></li>
+<li><a href="#简单抓站的n种方式三-lxml与xpath"
+id="toc-简单抓站的n种方式三-lxml与xpath">简单抓站的N种方式（三）-lxml与xpath</a></li>
+<li><a href="#超参数优化之前让我们先来了解下贝叶斯优化方法"
+id="toc-超参数优化之前让我们先来了解下贝叶斯优化方法">超参数优化之前,让我们先来了解下贝叶斯优化方法</a></li>
+<li><a href="#用python把玩一下数字签名和消息加密"
+id="toc-用python把玩一下数字签名和消息加密">用python把玩一下数字签名和消息加密</a></li>
+<li><a href="#用numpy一步步解释pytorch损失函数"
+id="toc-用numpy一步步解释pytorch损失函数">用numpy一步步解释pytorch损失函数</a></li>
+<li><a href="#重新认识矩阵乘法---站在吃饭和建模的角度"
+id="toc-重新认识矩阵乘法---站在吃饭和建模的角度">重新认识矩阵乘法 -
+站在吃饭和建模的角度</a></li>
+<li><a href="#文本识别应用ctc的束搜索解码方法"
+id="toc-文本识别应用ctc的束搜索解码方法">文本识别应用CTC的束搜索解码方法</a></li>
+<li><a href="#文本识别中的ctc损失"
+id="toc-文本识别中的ctc损失">文本识别中的CTC损失</a></li>
+<li><a href="#ocr-what-and-how" id="toc-ocr-what-and-how">OCR: WHAT AND
+HOW</a></li>
+<li><a href="#证件检测算法的高效演进之路"
+id="toc-证件检测算法的高效演进之路">证件检测算法的高效演进之路</a></li>
+<li><a href="#深入理解证件图像信息自动化处理pipeline"
+id="toc-深入理解证件图像信息自动化处理pipeline">深入理解证件图像信息自动化处理Pipeline</a></li>
+<li><a href="#将图像作为序列在伪证鉴别算法应用中的探索"
+id="toc-将图像作为序列在伪证鉴别算法应用中的探索">将图像作为序列：在伪证鉴别算法应用中的探索</a></li>
+<li><a href="#通过pytorch代码深入理解在伪证鉴别模型中所实现的注意力机制"
+id="toc-通过pytorch代码深入理解在伪证鉴别模型中所实现的注意力机制">通过pytorch代码深入理解在伪证鉴别模型中所实现的注意力机制</a></li>
+<li><a
+href="#stdsemantic-text-detector一种基于语义特征的场景文本检测方法"
+id="toc-stdsemantic-text-detector一种基于语义特征的场景文本检测方法">STD（Semantic
+Text Detector）：一种基于语义特征的场景文本检测方法</a></li>
+<li><a href="#std一种基于语义特征的任意方向场景文本检测方法"
+id="toc-std一种基于语义特征的任意方向场景文本检测方法">STD++：一种基于语义特征的任意方向场景文本检测方法</a></li>
+<li><a href="#如何打包发布python项目让全世界的人都能用"
+id="toc-如何打包发布python项目让全世界的人都能用">如何打包发布Python项目，让全世界的人都能用</a></li>
+<li><a
+href="#如何在有限标注数据条件下利用自监督学习提升文本识别模型性能"
+id="toc-如何在有限标注数据条件下利用自监督学习提升文本识别模型性能">如何在有限标注数据条件下利用自监督学习提升文本识别模型性能</a></li>
+</ul></li>
+<li><a href="#数据科学data-science"
+id="toc-数据科学data-science">数据科学（Data Science）</a>
+<ul>
+<li><a href="#问鼎数据科学比赛之探索性数据分析eda"
+id="toc-问鼎数据科学比赛之探索性数据分析eda">问鼎数据科学比赛之探索性数据分析（EDA）</a></li>
+<li><a href="#问鼎数据科学比赛之特征工程数值型特征"
+id="toc-问鼎数据科学比赛之特征工程数值型特征">问鼎数据科学比赛之特征工程（数值型特征）</a></li>
+<li><a href="#问鼎数据科学比赛之特征工程类别特征"
+id="toc-问鼎数据科学比赛之特征工程类别特征">问鼎数据科学比赛之特征工程（类别特征）</a></li>
+<li><a href="#问鼎数据科学比赛之特征工程时间空间特征"
+id="toc-问鼎数据科学比赛之特征工程时间空间特征">问鼎数据科学比赛之特征工程（时间空间特征）</a></li>
+<li><a href="#问鼎数据科学比赛之缺失值的处理"
+id="toc-问鼎数据科学比赛之缺失值的处理">问鼎数据科学比赛之缺失值的处理</a></li>
+</ul></li>
+<li><a href="#视频教程video-tutorial"
+id="toc-视频教程video-tutorial">视频教程（Video Tutorial）</a>
+<ul>
+<li><a href="#llm部署和rag-检索增强生成实践完整视频"
+id="toc-llm部署和rag-检索增强生成实践完整视频">LLM部署和RAG-检索增强生成实践（完整视频）</a></li>
+<li><a href="#大语言模型微调完整视频"
+id="toc-大语言模型微调完整视频">大语言模型微调（完整视频）</a></li>
+<li><a href="#深入理解证件图像信息自动化处理pipeline-1"
+id="toc-深入理解证件图像信息自动化处理pipeline-1">深入理解证件图像信息自动化处理Pipeline</a></li>
+<li><a href="#证件定位算法what-and-how"
+id="toc-证件定位算法what-and-how">证件定位算法：What and How？</a></li>
+<li><a href="#图像作为序列伪证鉴别english-version"
+id="toc-图像作为序列伪证鉴别english-version">图像作为序列：伪证鉴别（english
+version）</a></li>
+<li><a href="#图像作为序列伪证鉴别中文"
+id="toc-图像作为序列伪证鉴别中文">图像作为序列：伪证鉴别（中文）</a></li>
+<li><a href="#深度学习算法在工业上的落地应用之不良品检测"
+id="toc-深度学习算法在工业上的落地应用之不良品检测">深度学习算法在工业上的落地应用之不良品检测</a></li>
+<li><a href="#grounding-dino和sam结合使用的demo"
+id="toc-grounding-dino和sam结合使用的demo">Grounding
+DINO和SAM结合使用的demo</a></li>
+<li><a href="#persammobilesam证件分割应用案例"
+id="toc-persammobilesam证件分割应用案例">PerSAM+MobileSAM证件分割应用案例</a></li>
+<li><a href="#cuda环境配置及pytorch安装"
+id="toc-cuda环境配置及pytorch安装">cuda环境配置及pytorch安装</a></li>
+<li><a href="#菲律宾多种证件端到端信息提取算法演示"
+id="toc-菲律宾多种证件端到端信息提取算法演示">菲律宾多种证件端到端信息提取算法演示</a></li>
+<li><a href="#文献整理及论文笔记管理"
+id="toc-文献整理及论文笔记管理">文献整理及论文笔记管理</a></li>
+</ul></li>
+<li><a href="#其他others" id="toc-其他others">其他（Others）</a>
+<ul>
+<li><a href="#latex备忘录" id="toc-latex备忘录">Latex备忘录</a></li>
+<li><a href="#how-to-plot-pie-chart-in-latex"
+id="toc-how-to-plot-pie-chart-in-latex">How to plot pie chart in
+LaTex</a></li>
+<li><a href="#latex备忘录复杂表格emoji代码块等"
+id="toc-latex备忘录复杂表格emoji代码块等">Latex备忘录：复杂表格、emoji、代码块等</a></li>
+<li><a href="#换脸-人脸动作生成-人脸属性编辑"
+id="toc-换脸-人脸动作生成-人脸属性编辑">换脸-人脸动作生成-人脸属性编辑</a></li>
+<li><a href="#善用markdown让写文档如虎添翼"
+id="toc-善用markdown让写文档如虎添翼">善用markdown让写文档如虎添翼</a></li>
+<li><a href="#微小说路边草"
+id="toc-微小说路边草">微小说：路边草</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
 
 ## 多模态大模型（MultiModal Large Models）
 ### 多模态预训练模型串烧1：CLIP、ViLT、ALBEF、VLMo
