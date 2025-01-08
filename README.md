@@ -172,6 +172,8 @@ id="toc-视频教程video-tutorial">视频教程（Video Tutorial）</a>
 id="toc-llm部署和rag-检索增强生成实践完整视频">LLM部署和RAG-检索增强生成实践（完整视频）</a></li>
 <li><a href="#大语言模型微调完整视频"
 id="toc-大语言模型微调完整视频">大语言模型微调（完整视频）</a></li>
+<li><a href="#从0到1掌握llm的函数调用"
+id="toc-从0到1掌握llm的函数调用">从0到1掌握LLM的函数调用</a></li>
 <li><a href="#深入理解证件图像信息自动化处理pipeline-1"
 id="toc-深入理解证件图像信息自动化处理pipeline-1">深入理解证件图像信息自动化处理Pipeline</a></li>
 <li><a href="#证件定位算法what-and-how"
@@ -197,10 +199,10 @@ id="toc-文献整理及论文笔记管理">文献整理及论文笔记管理</a>
 </ul></li>
 <li><a href="#其他others" id="toc-其他others">其他（Others）</a>
 <ul>
+<li><a href="#基金基础知识更加欢快的养基" id="toc-基金基础知识更加欢快的养基">基金基础知识，更加欢快的养基</a></li>
 <li><a href="#latex备忘录" id="toc-latex备忘录">Latex备忘录</a></li>
 <li><a href="#how-to-plot-pie-chart-in-latex"
-id="toc-how-to-plot-pie-chart-in-latex">How to plot pie chart in
-LaTex</a></li>
+id="toc-how-to-plot-pie-chart-in-latex">How to plot pie chart in LaTex</a></li>
 <li><a href="#latex备忘录复杂表格emoji代码块等"
 id="toc-latex备忘录复杂表格emoji代码块等">Latex备忘录：复杂表格、emoji、代码块等</a></li>
 <li><a href="#换脸-人脸动作生成-人脸属性编辑"
@@ -324,7 +326,7 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 本文就模型创建、预训练数据集等方面进行简要介绍，希望能为对预训练LLM感兴趣的朋友提供一些入门级别的常识吧。
 
 ### 大语言模型的函数调用（Function calling with LLMs）
-[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/HRGFMzbpKAzi9wSjsXOvoA)  |  [:file_folder:代码Code](https://pan.baidu.com/s/1hsH55kG59DIan95WEztcYA?pwd=lay0)
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/HRGFMzbpKAzi9wSjsXOvoA)  |  [:file_folder:代码Code](https://pan.baidu.com/s/1hsH55kG59DIan95WEztcYA?pwd=lay0) | [:video_camera:video](https://mp.weixin.qq.com/s/1am4Cyv31OHaBcgxQuPt6w)
 
 本文介绍大语言模型中的函数调用（function calling），有些地方又称为工具使用（tool use / tool calling），本文中我们不做概念区分，一律使用函数调用这个术语，函数调用允许我们通过自然语言指令调用外部函数，在私有化部署和应用中发挥重要作用，我们一般在网页聊天窗口中感受不到函数调用的能力，可能会感受到联网搜索、文档解析、Excel表格分析、制作PPT等等功能。
 本文我们从头开始，搭建一个用于演示的学生成绩数据库，该数据库仅包含一个数据表：100名学生的语数英、物化生成绩，基于该数据库实现几个查询和数据筛选函数，用于在LLM中进行调用。
@@ -526,6 +528,14 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 ### 大语言模型微调（完整视频）
 [:video_camera:原文 blog post](https://mp.weixin.qq.com/s/z75Ct1a9U7foZ24fJ0dr6Q)
 
+### 从0到1掌握LLM的函数调用
+[:video_camera:原文 blog post](https://mp.weixin.qq.com/s/1am4Cyv31OHaBcgxQuPt6w)
+
+> [大语言模型的函数调用](https://mp.weixin.qq.com/s/HRGFMzbpKAzi9wSjsXOvoA)一文的实操演练视频，通过notebook一步步实现。
+> 1. 详细了解如何使用函数调用，如何定义调用函数的形式，并使用LLM的文本指令调用这些函数
+> 2. 完整生命周期的实操演示，从头搭建示例数据库，实现几个简单的SQL查询函数，抛砖引玉，阐明要点
+> 3. 选择两个LLM，一个是开放平台提供的API（glm-4），另一个是本地部署的 Qwen2.5-7B-Instruct。以开放平台API为主，自己部署的API也是类似的。
+
 ### 深入理解证件图像信息自动化处理Pipeline
 [:video_camera:原文 blog post](https://mp.weixin.qq.com/s/vlZdt-v4Edrqofp8SgDVyw)
 
@@ -576,6 +586,11 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 > 在算法研究过程中，会看许许多多文献资料，时间久了就会很混乱；同时也会做很多笔记，刚开始用本子写，但不便于随时查阅，效率低下，写论文时需要看自己曾经的笔记也会非常不便。使用NoteExpress文献管理软件，方便做笔记，也方便用latex写论文时插入到论文中。
 
 ## 其他（Others）
+### 基金基础知识，更加欢快的养基
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/hdfcCJdVFgCoGvjhc584iw)
+
+> 作为十几年的养基散户，有必要整理一下基金相关的基础知识：啥是基金呢？有哪些分类呢？各自又有啥特点呢？什么样的基金适合长期持有呢？啥是指数？啥是ETF？QDII是啥？简单介绍一下网格法和应用例子。
+
 ### Latex备忘录
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/z1585WXTv6qCNEc1Ga92nw)
 
