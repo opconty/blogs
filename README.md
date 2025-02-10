@@ -36,6 +36,7 @@ id="toc-clip论文笔记及简单的使用示例">CLIP论文笔记及简单的�
 <li><a href="#大语言模型llm"
 id="toc-大语言模型llm">大语言模型（LLM）</a>
 <ul>
+<li><a href="#深入探讨类似chatgpt的大语言模型" id="toc-深入探讨类似chatgpt的大语言模型">深入探讨类似ChatGPT的大语言模型</a></li>
 <li><a href="#大语言模型微调fine-tune-llms"
 id="toc-大语言模型微调fine-tune-llms">大语言模型微调（Fine-tune
 LLMs）</a></li>
@@ -287,6 +288,14 @@ LLaVA(Large Language and Vision Assistant)，即大型语言和视觉助手，�
 CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable Visual Models From Natural Language Supervision”提出的多模态神经网络模型，在4亿条（图像，文本）数据集上进行训练。采用Resnet或者ViT（vision transformer）得到视觉特征，使用语言模型得到文本特征，然后将视觉特征和文本特征映射到相同维度的向量空间，二者点积用作相似度评分。
 
 ## 大语言模型（LLM）
+
+### 深入探讨类似ChatGPT的大语言模型
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/QIzwz7Tqfr4X4jmDKaVIeg) | [:video_camera: YouTube video](https://www.youtube.com/watch?v=7xTGNNLPyMI)
+
+> 本文整理自 Andrej Karpathy最新（2025.2.6）发布在YouTube上的视频：Deep Dive into LLMs like ChatGPT。原视频长达三个半小时，为了一窥其精要有必要整理一下，本文大概10分钟就可以看完，视频中的讲义也下载下来了，并转换成一张巨大的图片（8272像素 X 19723像素），放在[百度云盘共享出来](https://pan.baidu.com/s/1kCQPaKMaJTjmN4aVAWpApA?pwd=layg)。如果看完本文还不过瘾，感兴趣的话可以观看原始视频。
+
+原视频简介：This is a general audience deep dive into the Large Language Model (LLM) AI technology that powers ChatGPT and related products. It is covers the full training stack of how the models are developed， along with mental models of how to think about their "psychology"， and how to get the best use them in practical applications. I have one "Intro to LLMs" video already from ~year ago， but that is just a re-recording of a random talk， so I wanted to loop around and do a lot more comprehensive version.  （这是一个面向大众的深入解析，带你了解支撑 ChatGPT 等产品的大语言模型（LLM）AI 技术。内容涵盖了模型的完整训练流程，以及如何理解它们的“思维方式”，还能帮你掌握如何在实际应用中更高效地使用它们。大约一年前做过一个“LLM入门”视频，但那只是随手录制的一场分享，这次系统地整理，做一个更全面、更深入的版本）。
+
 ### 大语言模型微调（Fine-tune LLMs）
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/VSJDvalAlS5LgZgOwPwFow) | [:video_camera:video](https://mp.weixin.qq.com/s/z75Ct1a9U7foZ24fJ0dr6Q)
 
