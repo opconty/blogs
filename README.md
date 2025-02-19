@@ -175,6 +175,8 @@ id="toc-llm部署和rag-检索增强生成实践完整视频">LLM部署和RAG-�
 id="toc-大语言模型微调完整视频">大语言模型微调（完整视频）</a></li>
 <li><a href="#从0到1掌握llm的函数调用"
 id="toc-从0到1掌握llm的函数调用">从0到1掌握LLM的函数调用</a></li>
+<li><a href="#可视化详解moemixture-of-experts"
+id="toc-可视化详解moemixture-of-experts">可视化详解MoE(Mixture of Experts)</a></li>
 <li><a href="#深入理解证件图像信息自动化处理pipeline-1"
 id="toc-深入理解证件图像信息自动化处理pipeline-1">深入理解证件图像信息自动化处理Pipeline</a></li>
 <li><a href="#证件定位算法what-and-how"
@@ -212,6 +214,8 @@ id="toc-换脸-人脸动作生成-人脸属性编辑">换脸-人脸动作生成-
 id="toc-善用markdown让写文档如虎添翼">善用markdown让写文档如虎添翼</a></li>
 <li><a href="#微小说路边草"
 id="toc-微小说路边草">微小说：路边草</a></li>
+<li><a href="#微小说蝉以及如何用大语言模型润色以chatgpt为例"
+id="toc-微小说蝉以及如何用大语言模型润色以chatgpt为例">微小说：蝉，以及如何用大语言模型润色：以ChatGPT为例</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -545,6 +549,11 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 > 2. 完整生命周期的实操演示，从头搭建示例数据库，实现几个简单的SQL查询函数，抛砖引玉，阐明要点
 > 3. 选择两个LLM，一个是开放平台提供的API（glm-4），另一个是本地部署的 Qwen2.5-7B-Instruct。以开放平台API为主，自己部署的API也是类似的。
 
+### 可视化详解MoE(Mixture of Experts)
+[:video_camera: 原文blog post](https://mp.weixin.qq.com/s/-6TCOvVwhbM0Dx6m_vVELA)
+
+> 混合专家模型（Mixture of Experts, MoE）最近受到越来越多的关注，一些耳熟能详的模型比如Mixtral-8x7B, DeepSeek,  GPT-4, Gemini 1.5, Grok-1等都采用了MoE结构。本视频来自Jay Alammar和Maarten Grootendorst在deeplearning.ai上的短课程"How Transformer LLMs Work"，通过可视化，深入浅出详解什么是MoE。
+
 ### 深入理解证件图像信息自动化处理Pipeline
 [:video_camera:原文 blog post](https://mp.weixin.qq.com/s/vlZdt-v4Edrqofp8SgDVyw)
 
@@ -624,6 +633,14 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 ### 微小说：路边草
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/75WuKr4QoFVk9mLEizX6dw)
 
+### 微小说：蝉，以及如何用大语言模型润色：以ChatGPT为例
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/kLvcIu-qy-iO_EbZEEnepw)
+
+点评：
+> 1、这是一个很有感染力的小小说，从大自然的视角切入，层层递进地展现了生命的渺小与挣扎。
+2、通过细腻的描写和生动的视角，将蝉的生命历程展现得淋漓尽致。它们短暂的生命中所承载的使命，以及面对残酷世界的无助与挣扎，都令人动容。
+3、蝉的幼虫在泥土中蛰伏多年，而“小天线”就像它们与外界连接的微小窗口，预示着生命即将破土而出的瞬间。这样的描写赋予了故事强烈的代入感和自然的神秘感，真的很棒！
+4、充满了自然的灵动与诗意，特别是对细节的捕捉和情感的铺陈，非常生动地展现了蝉的视角。像一幅细腻的田园画，读起来有一种清新和原生态的美感。
 
 ----
 
@@ -633,9 +650,11 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 ----
 
-**欢迎加入技术交流群，共同交流技术、分享资源（如果二维码过期，欢迎在公号中留言，便于发送二维码）**
+**欢迎加入技术交流群，共同交流技术、分享资源**
 
 ![](technical_exchange_group.jpg)
 
+**如果二维码过期，欢迎在公号中留言，便于发送二维码，请加小助手微信，备注：github**
+![](hoho_qrcode.jpg)
 
 - https://github.com/opconty/blogs
