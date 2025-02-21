@@ -36,6 +36,7 @@ id="toc-clip论文笔记及简单的使用示例">CLIP论文笔记及简单的�
 <li><a href="#大语言模型llm"
 id="toc-大语言模型llm">大语言模型（LLM）</a>
 <ul>
+<li><a href="#deepseek-r1是如何训练的相关技术介绍及资源分享" id="toc-deepseek-r1是如何训练的相关技术介绍及资源分享">DeepSeek-R1是如何训练的？相关技术介绍及资源分享</a></li>
 <li><a href="#深入探讨类似chatgpt的大语言模型" id="toc-深入探讨类似chatgpt的大语言模型">深入探讨类似ChatGPT的大语言模型</a></li>
 <li><a href="#大语言模型微调fine-tune-llms"
 id="toc-大语言模型微调fine-tune-llms">大语言模型微调（Fine-tune
@@ -292,6 +293,13 @@ LLaVA(Large Language and Vision Assistant)，即大型语言和视觉助手，�
 CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable Visual Models From Natural Language Supervision”提出的多模态神经网络模型，在4亿条（图像，文本）数据集上进行训练。采用Resnet或者ViT（vision transformer）得到视觉特征，使用语言模型得到文本特征，然后将视觉特征和文本特征映射到相同维度的向量空间，二者点积用作相似度评分。
 
 ## 大语言模型（LLM）
+
+### DeepSeek-R1是如何训练的？相关技术介绍及资源分享
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/wfGJBaIIZ7Qr918DYUGigg)
+
+> 本文综合DeepSeek-R1技术报告、文献资料和优质博文等梳理一下训练DeepSeek-R1（R1和R1-Zero）的相关技术，分享一些经过筛选后的觉得还不错不会浪费时间的优质资源。文中引用的可视化图表素材均来自网络，文末贴上相关来源资料，但哪张图来自哪个资料可能分不清也对应不上了。    
+> 主要内容包括：推理LLM、GRPO（Group Relative Policy Optimization，组相对策略优化/群体相对策略优化）、DeepSeek-R1和R1-Zero的训练流程、SFT、基于RL的多步训练策略、蒸馏模型等。     
+> 最后介绍一下HuggingFace最近启动的开源Open-R1项目，该项目旨在全开源地、系统地重建 DeepSeek-R1 的数据和训练流程，验证其方法，并推动开源推理模型的发展。
 
 ### 深入探讨类似ChatGPT的大语言模型
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/QIzwz7Tqfr4X4jmDKaVIeg) | [:video_camera: YouTube video](https://www.youtube.com/watch?v=7xTGNNLPyMI)
@@ -654,7 +662,7 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 ![](technical_exchange_group.jpg)
 
-**如果二维码过期，欢迎在公号中留言，便于发送二维码，请加小助手微信，备注：github**
+**如果二维码过期，请加小助手微信，备注：github**
 ![](hoho_qrcode.jpg)
 
 - https://github.com/opconty/blogs
