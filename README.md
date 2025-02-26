@@ -36,6 +36,7 @@ id="toc-clip论文笔记及简单的使用示例">CLIP论文笔记及简单的�
 <li><a href="#大语言模型llm"
 id="toc-大语言模型llm">大语言模型（LLM）</a>
 <ul>
+<li><a href="#来了来了免费deepseek-r1满血版使用教程来了" id="toc-deepseek-来了来了免费deepseek-r1满血版使用教程来了">来了来了，免费DeepSeek-R1满血版使用教程来了！</a></li>
 <li><a href="#deepseek-r1是如何训练的相关技术介绍及资源分享" id="toc-deepseek-r1是如何训练的相关技术介绍及资源分享">DeepSeek-R1是如何训练的？相关技术介绍及资源分享</a></li>
 <li><a href="#深入探讨类似chatgpt的大语言模型" id="toc-深入探讨类似chatgpt的大语言模型">深入探讨类似ChatGPT的大语言模型</a></li>
 <li><a href="#大语言模型微调fine-tune-llms"
@@ -293,6 +294,14 @@ LLaVA(Large Language and Vision Assistant)，即大型语言和视觉助手，�
 CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable Visual Models From Natural Language Supervision”提出的多模态神经网络模型，在4亿条（图像，文本）数据集上进行训练。采用Resnet或者ViT（vision transformer）得到视觉特征，使用语言模型得到文本特征，然后将视觉特征和文本特征映射到相同维度的向量空间，二者点积用作相似度评分。
 
 ## 大语言模型（LLM）
+
+### 来了来了，免费DeepSeek-R1满血版使用教程来了！
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/gLTNA4G4mmbxMJFR_eXZxg)
+
+> 本文是纯操作教程，一步步配置免费满血版的DeepSeek-R1，DeepSeek官网和APP总出现“服务器繁忙，请稍后再试”。但是不慌，有许多第三方平台也提供DeepSeek-R1，包括网页端直接使用或者API调用。
+本文使用NVIDIA（英伟达）和OpenRouter提供的API，客户端聊天软件使用ChatBox和谷歌的Chrome浏览器插件Page Assist，即使小白也能轻轻松松上手。总结起来就两步：
+> 1. 第一先到API提供平台申请API KEY，本文以NVIDIA（英伟达）和OpenRouter为例，如果在其他API平台申请的，也是同样操作。
+> 2. 第二就是在聊天客户端进行配置，本文以Chatbox和page assist为例，一一进行详细的介绍。
 
 ### DeepSeek-R1是如何训练的？相关技术介绍及资源分享
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/wfGJBaIIZ7Qr918DYUGigg)
