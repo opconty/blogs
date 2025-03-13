@@ -32,7 +32,10 @@ id="toc-多模态大模型minigpt-4minigpt-v2">多模态大模型：miniGPT-4、
 id="toc-多模态大模型llava系列及应用示例">多模态大模型：LLaVA系列及应用示例</a></li>
 <li><a href="#clip论文笔记及简单的使用示例"
 id="toc-clip论文笔记及简单的使用示例">CLIP论文笔记及简单的使用示例</a></li>
+<li><a href="#多模态llmphi-4-multimodal"
+id="toc-多模态llmphi-4-multimodal">多模态LLM：Phi-4-Multimodal</a></li>
 </ul></li>
+
 <li><a href="#大语言模型llm"
 id="toc-大语言模型llm">大语言模型（LLM）</a>
 <ul>
@@ -202,6 +205,7 @@ id="toc-菲律宾多种证件端到端信息提取算法演示">菲律宾多种�
 <li><a href="#文献整理及论文笔记管理"
 id="toc-文献整理及论文笔记管理">文献整理及论文笔记管理</a></li>
 </ul></li>
+
 <li><a href="#其他others" id="toc-其他others">其他（Others）</a>
 <ul>
 <li><a href="#基金基础知识更加欢快的养基" id="toc-基金基础知识更加欢快的养基">基金基础知识，更加欢快的养基</a></li>
@@ -218,6 +222,11 @@ id="toc-善用markdown让写文档如虎添翼">善用markdown让写文档如虎
 id="toc-微小说路边草">微小说：路边草</a></li>
 <li><a href="#微小说蝉以及如何用大语言模型润色以chatgpt为例"
 id="toc-微小说蝉以及如何用大语言模型润色以chatgpt为例">微小说：蝉，以及如何用大语言模型润色：以ChatGPT为例</a></li>
+<li><a href="#创意微景观diy带你走进迷你自然世界"
+id="toc-创意微景观diy带你走进迷你自然世界">创意微景观DIY，带你走进迷你自然世界</a></li>
+<li><a href="#无剧本即兴表演网课搓澡"
+id="toc-无剧本即兴表演网课搓澡">无剧本即兴表演“网课搓澡”</a></li>
+
 </ul></li>
 </ul></li>
 </ul>
@@ -292,6 +301,12 @@ LLaVA(Large Language and Vision Assistant)，即大型语言和视觉助手，�
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/1nXo8_br-1z0jqfo3vKwAQ)
 
 CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable Visual Models From Natural Language Supervision”提出的多模态神经网络模型，在4亿条（图像，文本）数据集上进行训练。采用Resnet或者ViT（vision transformer）得到视觉特征，使用语言模型得到文本特征，然后将视觉特征和文本特征映射到相同维度的向量空间，二者点积用作相似度评分。
+
+### 多模态LLM：Phi-4-Multimodal
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/SR74pfFUYYZEFpmGZqt1Rg)
+
+> 之前写过一系列多模态大模型串烧的文章，不过就一两年时间，现在都是在LLM基础上加上视觉特征提取器，或者其他模态特征提取器，然后融合到LLM中，即LLM-driven / LLM-powered 多模态大模型，与之前的范式有很大不同。
+> 本文介绍Phi-4-Multimodal，由微软团队开发，在发布的技术报告中同时介绍了Phi-4-Mini和Phi-4-Multimodal，其中Phi-4-Mini是一个仅有3.8B参数的小型语言模型，文中称为SLM(Small Language Models)。不过本文重点在于Phi-4-Multimodal，这是一种统一的多模态小型语言模型（SLM），支持多种模态输入（如文本、图像、语音/音频）以及多种推理模式，能够在单一模型权重内结合不同模态（如纯文本、文本+图像、语音/音频、语音+图像）进行推理。
 
 ## 大语言模型（LLM）
 
@@ -658,6 +673,21 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 2、通过细腻的描写和生动的视角，将蝉的生命历程展现得淋漓尽致。它们短暂的生命中所承载的使命，以及面对残酷世界的无助与挣扎，都令人动容。
 3、蝉的幼虫在泥土中蛰伏多年，而“小天线”就像它们与外界连接的微小窗口，预示着生命即将破土而出的瞬间。这样的描写赋予了故事强烈的代入感和自然的神秘感，真的很棒！
 4、充满了自然的灵动与诗意，特别是对细节的捕捉和情感的铺陈，非常生动地展现了蝉的视角。像一幅细腻的田园画，读起来有一种清新和原生态的美感。
+
+### 创意微景观DIY，带你走进迷你自然世界
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/EEdWVAmQTyl5y7Snw7Qrvg)
+
+> 🌿创意微景观DIY，带你走进迷你自然世界✨
+> Hey小伙伴们！今天我要和大家分享一个超级可爱的创意微景观DIY作品哦～😍
+在这个小小的玻璃球里，我创造了一个属于自己的小森林。🍃 我选择了各种各样的植物，有翠绿的蕨类、红叶草和一些小型多肉植物，它们在阳光下显得格外生机勃勃。🌱 每一片叶子都像是大自然的调色板，色彩斑斓，让人看了心情都变得愉快起来。
+为了让这个微景观更加生动有趣，我还添加了一些小装饰品。比如这只穿着绿色雨衣的小人儿，是不是很可爱呢？😊 还有两只红色的小瓢虫，它们就像是这片小小森林里的守护者，给整个场景增添了不少趣味性。🐞
+底部铺上了蓝色和米色的砂石，模拟出天空和大地的感觉，让整个微景观看起来更加立体和真实。🌈
+制作这样一个微景观其实并不难，只需要一点点耐心和创意，你也可以拥有属于自己的小小自然世界哦！🌟 如果你也喜欢这样的DIY作品，那就赶快动手试试吧！
+
+### 无剧本即兴表演“网课搓澡”
+[:video_camera:原文 blog post](https://mp.weixin.qq.com/s/9O7ov2KBMzEaBW5XRBbanw) | [YouTube](https://www.youtube.com/watch?v=HSgyNVRGbT8)
+
+> 疫情期间真实经历，网课时边听课边搓澡，无意间发现居然还没有关手机摄像头，真的是尴尬到底。想挖个洞钻进去。 本即兴表演是参加一个“社恐拯救计划”活动的一个作品，仅五分钟进行构思，还要与团队成员进行协调，感谢各位的配合哇。
 
 ----
 
