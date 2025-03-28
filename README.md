@@ -1,5 +1,14 @@
 # **`laygin`** 博客文章记录及资源（Blog Post Records & Resources）
 
+
+**欢迎关注公众号：laygin (Welcome to follow the official account: laygin)**     
+ **欢迎加入技术交流群，共同交流技术、分享资源，请加小助手微信，备注：github**
+
+<img src="qrcode_for_ggzh.jpg" width="30%" /> <img src="hoho_qrcode.png" width="30%" />
+
+----
+
+
 <nav id="TOC" role="doc-toc">
 <ul>
 <li><a href="#laygin-博客文章记录及资源blog-post-records-resources"
@@ -34,6 +43,9 @@ id="toc-多模态大模型llava系列及应用示例">多模态大模型：LLaVA
 id="toc-clip论文笔记及简单的使用示例">CLIP论文笔记及简单的使用示例</a></li>
 <li><a href="#多模态llmphi-4-multimodal"
 id="toc-多模态llmphi-4-multimodal">多模态LLM：Phi-4-Multimodal</a></li>
+<li><a href="#在泰国文档理解算法研究中关于泰文字符的探索和insights"
+id="toc-在泰国文档理解算法研究中关于泰文字符的探索和insights">在泰国文档理解算法研究中关于泰文字符的探索和insights</a></li>
+
 </ul></li>
 
 <li><a href="#大语言模型llm"
@@ -307,6 +319,13 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 > 之前写过一系列多模态大模型串烧的文章，不过就一两年时间，现在都是在LLM基础上加上视觉特征提取器，或者其他模态特征提取器，然后融合到LLM中，即LLM-driven / LLM-powered 多模态大模型，与之前的范式有很大不同。
 > 本文介绍Phi-4-Multimodal，由微软团队开发，在发布的技术报告中同时介绍了Phi-4-Mini和Phi-4-Multimodal，其中Phi-4-Mini是一个仅有3.8B参数的小型语言模型，文中称为SLM(Small Language Models)。不过本文重点在于Phi-4-Multimodal，这是一种统一的多模态小型语言模型（SLM），支持多种模态输入（如文本、图像、语音/音频）以及多种推理模式，能够在单一模型权重内结合不同模态（如纯文本、文本+图像、语音/音频、语音+图像）进行推理。
+
+### 在泰国文档理解算法研究中关于泰文字符的探索和insights
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/70fWxr1w7vgj4XHQQ4RdVg)
+
+> - 最近着手开发一个基于多模态大模型的泰国文档关键信息提取算法，在前期进行数据分析和tokenization实验的过程中遇到一些比较有趣的问题，这是在做中文或者英文相关任务中是没有遇到过的。
+> - 众所周知，像中文字符或者英文字母，无论笔画有多少、无论构成多么复杂，一个字符其长度就是1，但是泰文不一样，主要跟泰语的书写系统和字符的组合方式有关，所以记录一下。
+> - 事情的起因是这样的，当我在对比模型预测结果跟真实标注结果时（比如泰文中姓名或者地址），发现两个字符串一模一样，可是却又不相等，所以尝试一个个字符对比将不同的字符和索引打印出来，通过索引获取的字符好像原串中又看不到，所以引起极大的探索欲望。
 
 ## 大语言模型（LLM）
 
@@ -690,18 +709,5 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 > 疫情期间真实经历，网课时边听课边搓澡，无意间发现居然还没有关手机摄像头，真的是尴尬到底。想挖个洞钻进去。 本即兴表演是参加一个“社恐拯救计划”活动的一个作品，仅五分钟进行构思，还要与团队成员进行协调，感谢各位的配合哇。
 
 ----
-
-**欢迎关注公众号：laygin (Welcome to follow the official account: laygin)**
-
-![](qrcode_for_ggzh.jpg)
-
-----
-
-**欢迎加入技术交流群，共同交流技术、分享资源**
-
-![](technical_exchange_group.jpg)
-
-**如果二维码过期，请加小助手微信，备注：github**
-![](hoho_qrcode.jpg)
 
 - https://github.com/opconty/blogs
