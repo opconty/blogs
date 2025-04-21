@@ -2,9 +2,7 @@
 
 
 **欢迎关注公众号：laygin (Welcome to follow the official account: laygin)**     
- **欢迎加入技术交流群，共同交流技术、分享资源，请加小助手微信，备注：github**
-
-<img src="qrcode_for_ggzh.jpg" width="30%" /> <img src="hoho_qrcode.png" width="30%" />
+<img src="qrcode_for_ggzh.jpg" width="30%" /> 
 
 ----
 
@@ -76,7 +74,10 @@ Agent？智能体简介</a></li>
 id="toc-可以运行在cpu上的聊天大模型gpt4all">可以运行在CPU上的聊天大模型：GPT4ALL</a></li>
 <li><a href="#大模型微调lora和dora的原理及pytorch实现"
 id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：LoRA和DoRA的原理及pytorch实现</a></li>
+<li><a href="#一文图解混合专家模型" id="toc-一文图解混合专家模型">一文图解混合专家模型</a></li>
+
 </ul></li>
+
 <li><a href="#视觉大模型lvm"
 id="toc-视觉大模型lvm">视觉大模型（LVM）</a>
 <ul>
@@ -85,6 +86,7 @@ id="toc-视觉大模型samsegment-anything及示例">视觉大模型：SAM（Seg
 Anything）及示例</a></li>
 <li><a href="#视觉大模型persam一张图定制sammobilesam更小更快的sam"
 id="toc-视觉大模型persam一张图定制sammobilesam更小更快的sam">视觉大模型：PerSAM（一张图定制SAM）、MobileSAM（更小更快的SAM）</a></li>
+
 </ul></li>
 <li><a href="#aigc" id="toc-aigc">AIGC</a>
 <ul>
@@ -236,8 +238,8 @@ id="toc-微小说路边草">微小说：路边草</a></li>
 id="toc-微小说蝉以及如何用大语言模型润色以chatgpt为例">微小说：蝉，以及如何用大语言模型润色：以ChatGPT为例</a></li>
 <li><a href="#创意微景观diy带你走进迷你自然世界"
 id="toc-创意微景观diy带你走进迷你自然世界">创意微景观DIY，带你走进迷你自然世界</a></li>
-<li><a href="#无剧本即兴表演网课搓澡"
-id="toc-无剧本即兴表演网课搓澡">无剧本即兴表演“网课搓澡”</a></li>
+<li><a href="#无剧本即兴表演网课搓澡" id="toc-无剧本即兴表演网课搓澡">无剧本即兴表演“网课搓澡”</a></li>
+<li><a href="#太极练习" id="toc-太极练习">太极练习</a></li>
 
 </ul></li>
 </ul></li>
@@ -423,6 +425,17 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 ### 大模型微调：LoRA和DoRA的原理及pytorch实现
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/Jk5FHMihFqh2mnaHajyQvg)
+
+### 一文图解混合专家模型
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/fguGQcX7U96i_CHC3VYP2Q)
+
+> - 混合专家模型(Mixture of Experts，MoE)的理念起源于1991年的论文：《Adaptive Mixture of Local Experts》，这个概念与集成学习方法相似，旨在为由多个单独网络组成的系统建立一个监管机制，在这种系统中，每个网络 (被称为“专家”) 处理训练样本的不同子集，专注于输入空间的特定区域。
+> - 许多具有代表性的模型，比如Mixtral-8x7B, DeepSeek, GPT-4, Gemini 1.5, Grok-1等都采用MoE的架构，同时看了一些MoE相关的文献和资料，所以总结一下。
+> - 要点：
+- - 与稠密模型相比， MoE预训练速度更快。
+- - 与具有相同参数数量的模型相比，具有更快的推理速度。
+- - 需要大量显存，因为所有专家系统都需要加载到内存中。
+- - MoE主要包括两个核心部分：专家和门控网络。
 
 
 ## 视觉大模型（LVM）
@@ -707,6 +720,11 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 [:video_camera:原文 blog post](https://mp.weixin.qq.com/s/9O7ov2KBMzEaBW5XRBbanw) | [YouTube](https://www.youtube.com/watch?v=HSgyNVRGbT8)
 
 > 疫情期间真实经历，网课时边听课边搓澡，无意间发现居然还没有关手机摄像头，真的是尴尬到底。想挖个洞钻进去。 本即兴表演是参加一个“社恐拯救计划”活动的一个作品，仅五分钟进行构思，还要与团队成员进行协调，感谢各位的配合哇。
+
+### 太极练习
+[:video_camera:原文 blog post](https://mp.weixin.qq.com/s/SnIbMQ35Pdva6ghpbkrn-w) 
+
+> 最近参加文化馆的《太极》课程，为期两个月，共八节课，每节课一个半小时，打太极的好处就不用多说了吧，修身养性、保持健康、传播传统优良文化，练的就是定力。
 
 ----
 
