@@ -76,6 +76,7 @@ id="toc-可以运行在cpu上的聊天大模型gpt4all">可以运行在CPU上的
 id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：LoRA和DoRA的原理及pytorch实现</a></li>
 <li><a href="#一文图解混合专家模型" id="toc-一文图解混合专家模型">一文图解混合专家模型</a></li>
 <li><a href="#通过一个简单例子深入浅出理解agent2agent协议" id="toc-通过一个简单例子深入浅出理解agent2agent协议">通过一个简单例子深入浅出理解Agent2Agent协议</a></li>
+<li><a href="#openclaw入门安装免费模型配置飞书连接以及常见问题排查解决" id="toc-openclaw入门安装免费模型配置飞书连接以及常见问题排查解决">OpenClaw入门：安装免费模型配置飞书连接以及常见问题排查解决</a></li>
 
 </ul></li>
 
@@ -454,6 +455,12 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 > 简单介绍一下A2A，它最初是由Google开发的，现在已捐赠给Linux基金会，为不同AI智能体的互操作性提供一种通用语言，适用于不同框架、不同供应商构建的AI智能体。以下是AI智能体的堆栈结构，包括使用不同框架开发的智能体进行互相沟通的A2A协议，将模型与外部资源进行连接的MCP协议，用于构建AI智能体的工具包的框架（比如ADK）以及AI智能体推理的大语言模型（large language model，LLM）
 > 下面就用一个简单的例子来实现一下吧，使用智谱AI的大语言模型API（因为免费），创建两个Agent server（一个是数学计算的学霸，一个是眼里只有代码的码农），我们会后台启动两个服务（即A2A servers，其实这里的server可以是不同的实现，这里仅仅是事例就不做复杂了，举一反三，触类旁通吧），然后A2A客户端发起请求，先测试单个server的功能，然后将两个server串联起来，比如先让数学学霸进行数学计算，然后码农使用python代码实现。
+
+### OpenClaw入门：安装免费模型配置飞书连接以及常见问题排查解决
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/VPJVv1eYUSvVgBZ8ASdZdw)
+
+> 本文是关于OpenClaw的入门文章，从0到1，主要介绍OpenClaw的安装、配置，包括OpenClaw模型配置，比如列表里面的模型、免费的智谱AI模型GLM-4.7-flash以及自定义模型（比如自己部署的LLM、企业内部部署的LLM等）；OpenClaw如何与聊天机器人连接（以飞书为例）。在这过程中常常会遇到一些问题，本文也分享一下如何排查和解决这些问题，还有一些注意事项啥的，避免走弯路或者浪费太多时间在前期的安装配置阶段。
+> 在OpenClaW安装、配置的初步阶段成功完成之后，后续的应用才是重点，比如skills实战、多Agents协作等等，也会不断分享OpenClaw的实际应用。
 
 ## 视觉大模型（LVM）
 ### 视觉大模型：SAM（Segment Anything）及示例
