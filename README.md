@@ -114,6 +114,10 @@ Diffusion笔记及使用示例</a></li>
 id="toc-ltx-23-vs-wan22-vs-longcat三大开源视频生成模型实测对比">LTX-2.3 vs Wan2.2 vs Longcat：三大开源视频生成模型实测对比</a></li>
 <li><a href="#我做了一个ai自动剪辑系统长视频一键生成高光短视频"
 id="toc-我做了一个ai自动剪辑系统长视频一键生成高光短视频">我做了一个AI自动剪辑系统：长视频一键生成高光短视频</a></li>
+<li><a href="#读完最前沿的agent论文后发现2026年ai的研究方向已经变了"
+id="toc-读完最前沿的agent论文后发现2026年ai的研究方向已经变了">读完最前沿的Agent论文后，发现2026年AI的研究方向已经变了</a></li>
+<li><a href="#视频生成模型ltx最佳实践为什么你的ai视频没有电影感"
+id="toc-视频生成模型ltx最佳实践为什么你的ai视频没有电影感">视频生成模型LTX最佳实践：为什么你的AI视频没有电影感？</a></li>
 
 </ul></li>
 <li><a href="#pytorch-python" id="toc-pytorch-python">Pytorch &amp;
@@ -533,6 +537,17 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 ### 我做了一个AI自动剪辑系统：长视频一键生成高光短视频
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/aTFmyresSfluwajBe8hPDw)
+
+### 读完最前沿的Agent论文后，发现2026年AI的研究方向已经变了
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/bE3ONgpqv_CTZnWBgVNCMA)
+
+> 本文主要记录一下最近读完关于智能体（AI Agent）的最新论文以及研究综述文章后的感悟和心得。 
+> 过去两年，很多人都以为：AI Agent（智能体）的核心是Prompt（也就是大家熟知的提示词），谁Prompt写得好，谁就更强；后来大家又觉得，Agent的关键是 Tool Use（工具调用），会搜索、会写代码、会操作浏览器，就是“高级 Agent”；
+
+### 视频生成模型LTX最佳实践：为什么你的AI视频没有电影感？
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/riTCrpz-MA-FnRjtosFwAA)
+
+> 本文重在实践，使用LTX-2.3，分享一下如何生成电影级质感的AI视频。LTX真正的能力，不是“生成视频”，而是“生成镜头”，LTX-2.3 本质上并不是一个“自动讲故事的模型”，它更像一个会根据文字指令“拍镜头”的虚拟摄影机，这意味着你写 prompt 的方式，不能是描述“发生了什么”，而是要描述“镜头如何拍这个东西”。撰写 prompt 时，着重于对动作和场景进行详尽的、按时间顺序的描述，包含具体的动作、人物外貌、镜头角度和环境细节，所有内容都应在一个流畅的段落中呈现，直接从动作开始，并保持描述准确无误，像电影摄影师描述镜头列表那样思考
 
 
 ## Pytorch & Python
