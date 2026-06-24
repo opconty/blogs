@@ -77,6 +77,9 @@ id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：L
 <li><a href="#一文图解混合专家模型" id="toc-一文图解混合专家模型">一文图解混合专家模型</a></li>
 <li><a href="#通过一个简单例子深入浅出理解agent2agent协议" id="toc-通过一个简单例子深入浅出理解agent2agent协议">通过一个简单例子深入浅出理解Agent2Agent协议</a></li>
 <li><a href="#openclaw入门安装免费模型配置飞书连接以及常见问题排查解决" id="toc-openclaw入门安装免费模型配置飞书连接以及常见问题排查解决">OpenClaw入门：安装免费模型配置飞书连接以及常见问题排查解决</a></li>
+<li><a href="#opencode-从入门到实战打造你的第一个-ai-agent" id="toc-opencode-从入门到实战打造你的第一个-ai-agent">OpenCode 从入门到实战：打造你的第一个 AI Agent</a></li>
+<li><a href="#ai视频工厂用到的字幕处理技能分享" id="toc-ai视频工厂用到的字幕处理技能分享">“AI视频工厂”用到的字幕处理技能分享</a></li>
+
 
 </ul></li>
 
@@ -474,6 +477,16 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 > 本文是关于OpenClaw的入门文章，从0到1，主要介绍OpenClaw的安装、配置，包括OpenClaw模型配置，比如列表里面的模型、免费的智谱AI模型GLM-4.7-flash以及自定义模型（比如自己部署的LLM、企业内部部署的LLM等）；OpenClaw如何与聊天机器人连接（以飞书为例）。在这过程中常常会遇到一些问题，本文也分享一下如何排查和解决这些问题，还有一些注意事项啥的，避免走弯路或者浪费太多时间在前期的安装配置阶段。
 > 在OpenClaW安装、配置的初步阶段成功完成之后，后续的应用才是重点，比如skills实战、多Agents协作等等，也会不断分享OpenClaw的实际应用。
+
+### OpenCode 从入门到实战：打造你的第一个 AI Agent
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/TD1SzkQ919dl5mDV78ByZg)
+
+> 本文主要介绍OpenCode的使用、模型配置（包括已有模型和自定义模型）、skill的创建和使用，包括简单skill，比如写周报、润色文章、翻译啥的；以及进阶一点的skill，需要执行python脚本，比如图片加水印等等。本文内容短小精悍，保证能让完全没有任何编程经验的朋友都能在自己的电脑上把agent跑起来。
+
+### “AI视频工厂”用到的字幕处理技能分享
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/-_HvK3l-sQZ8gjMLG6BWcA)
+
+> 本文分享一下之前的”AI自动裁剪“、”AI视频制作“文章中提到的核心模块：字幕文件的处理。做视频/字幕的朋友都有个痛苦经历：拿到一段英文字幕，要翻译成中文，要从中提炼核心观点做短视频，还要写标题和简介：一套流程下来，光处理字幕就要花 1-2 小时，后来我用 AI 技能搭建了一套自动化字幕处理工作流，现在只需要：上传字幕 → 自动提取高光片段 → AI 自动翻译 → 自动生成标题和简介，不到 1 分钟完成原来需要几小时的工作。本文分享这 3 个我最常用的 AI 字幕处理技能，以及如何搭建自己的工作流。
 
 ## 视觉大模型（LVM）
 ### 视觉大模型：SAM（Segment Anything）及示例
