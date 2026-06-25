@@ -79,6 +79,7 @@ id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：L
 <li><a href="#openclaw入门安装免费模型配置飞书连接以及常见问题排查解决" id="toc-openclaw入门安装免费模型配置飞书连接以及常见问题排查解决">OpenClaw入门：安装免费模型配置飞书连接以及常见问题排查解决</a></li>
 <li><a href="#opencode-从入门到实战打造你的第一个-ai-agent" id="toc-opencode-从入门到实战打造你的第一个-ai-agent">OpenCode 从入门到实战：打造你的第一个 AI Agent</a></li>
 <li><a href="#ai视频工厂用到的字幕处理技能分享" id="toc-ai视频工厂用到的字幕处理技能分享">“AI视频工厂”用到的字幕处理技能分享</a></li>
+<li><a href="#opencode配置mcp服务应用实践" id="toc-opencode配置mcp服务应用实践">OpenCode配置MCP服务应用实践</a></li>
 
 
 </ul></li>
@@ -487,6 +488,11 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/-_HvK3l-sQZ8gjMLG6BWcA)
 
 > 本文分享一下之前的”AI自动裁剪“、”AI视频制作“文章中提到的核心模块：字幕文件的处理。做视频/字幕的朋友都有个痛苦经历：拿到一段英文字幕，要翻译成中文，要从中提炼核心观点做短视频，还要写标题和简介：一套流程下来，光处理字幕就要花 1-2 小时，后来我用 AI 技能搭建了一套自动化字幕处理工作流，现在只需要：上传字幕 → 自动提取高光片段 → AI 自动翻译 → 自动生成标题和简介，不到 1 分钟完成原来需要几小时的工作。本文分享这 3 个我最常用的 AI 字幕处理技能，以及如何搭建自己的工作流。
+
+### OpenCode配置MCP服务应用实践
+[原文 blog post](https://mp.weixin.qq.com/s/3hot80KDbLiH6iUD3J8Kbw)
+
+之前咱们安装好了OpenCode，也学会了如何创建技能，还用写周报、添加图像水印和字幕文件处理实践了一把，今天分享一下如何在OpenCode中配置和使用MCP服务，后面举两个例子进行演示，可以立马上手。
 
 ## 视觉大模型（LVM）
 ### 视觉大模型：SAM（Segment Anything）及示例
