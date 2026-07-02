@@ -80,7 +80,7 @@ id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：L
 <li><a href="#opencode-从入门到实战打造你的第一个-ai-agent" id="toc-opencode-从入门到实战打造你的第一个-ai-agent">OpenCode 从入门到实战：打造你的第一个 AI Agent</a></li>
 <li><a href="#ai视频工厂用到的字幕处理技能分享" id="toc-ai视频工厂用到的字幕处理技能分享">“AI视频工厂”用到的字幕处理技能分享</a></li>
 <li><a href="#opencode配置mcp服务应用实践" id="toc-opencode配置mcp服务应用实践">OpenCode配置MCP服务应用实践</a></li>
-
+<li><a href="#基金板块股市行情分析助手技能聊聊天就能长知识" id="toc-基金板块股市行情分析助手技能聊聊天就能长知识">基金板块股市行情分析助手技能，聊聊天就能长知识</a></li>
 
 </ul></li>
 
@@ -493,6 +493,11 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 [原文 blog post](https://mp.weixin.qq.com/s/3hot80KDbLiH6iUD3J8Kbw)
 
 之前咱们安装好了OpenCode，也学会了如何创建技能，还用写周报、添加图像水印和字幕文件处理实践了一把，今天分享一下如何在OpenCode中配置和使用MCP服务，后面举两个例子进行演示，可以立马上手。
+
+### 基金板块股市行情分析助手技能，聊聊天就能长知识
+[原文 blog post](https://mp.weixin.qq.com/s/9YxpBcOLA8JK30arruV9Ng)
+
+最近股市真是太迷了，很多问题总萦绕在脑海，所以就自己弄了一个基金&股市&投资相关的助手，可以解疑答惑，提供操作建议，给他提供数据接口（通过MCP服务），实时查询数据，比如板块涨跌、主流资金流入流出、板块高估还是低估、基金费率&规模&成立时间等等信息的对比，还提供操作建议，生成图表啥的，但凡关于这些问题都能得到解决，源代码已经开源了，感兴趣可以试试。
 
 ## 视觉大模型（LVM）
 ### 视觉大模型：SAM（Segment Anything）及示例
