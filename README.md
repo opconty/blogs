@@ -81,6 +81,7 @@ id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：L
 <li><a href="#ai视频工厂用到的字幕处理技能分享" id="toc-ai视频工厂用到的字幕处理技能分享">“AI视频工厂”用到的字幕处理技能分享</a></li>
 <li><a href="#opencode配置mcp服务应用实践" id="toc-opencode配置mcp服务应用实践">OpenCode配置MCP服务应用实践</a></li>
 <li><a href="#基金板块股市行情分析助手技能聊聊天就能长知识" id="toc-基金板块股市行情分析助手技能聊聊天就能长知识">基金板块股市行情分析助手技能，聊聊天就能长知识</a></li>
+<li><a href="#ai智能体设计模式" id="toc-ai智能体设计模式">AI智能体设计模式</a></li>
 
 </ul></li>
 
@@ -498,6 +499,12 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 [原文 blog post](https://mp.weixin.qq.com/s/9YxpBcOLA8JK30arruV9Ng)
 
 最近股市真是太迷了，很多问题总萦绕在脑海，所以就自己弄了一个基金&股市&投资相关的助手，可以解疑答惑，提供操作建议，给他提供数据接口（通过MCP服务），实时查询数据，比如板块涨跌、主流资金流入流出、板块高估还是低估、基金费率&规模&成立时间等等信息的对比，还提供操作建议，生成图表啥的，但凡关于这些问题都能得到解决，源代码已经开源了，感兴趣可以试试。
+
+### AI智能体设计模式
+[原文 blog post](https://mp.weixin.qq.com/s/RbRUrEf7_iy-Ls_Omjp57A)
+
+虽然有21个设计模式，其实其中很多都是将一整个谱系拆分成段，有点分散；当然平时写代码谁会对着模式表设计啊，对于设计模式的拆解，不是用来指导怎么写代码，而是有助于理清楚 agent 到底缺了哪块，也为了有个术语能够更好的与团队交流。
+
 
 ## 视觉大模型（LVM）
 ### 视觉大模型：SAM（Segment Anything）及示例
