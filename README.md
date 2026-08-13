@@ -82,6 +82,8 @@ id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：L
 <li><a href="#opencode配置mcp服务应用实践" id="toc-opencode配置mcp服务应用实践">OpenCode配置MCP服务应用实践</a></li>
 <li><a href="#基金板块股市行情分析助手技能聊聊天就能长知识" id="toc-基金板块股市行情分析助手技能聊聊天就能长知识">基金板块股市行情分析助手技能，聊聊天就能长知识</a></li>
 <li><a href="#ai智能体设计模式" id="toc-ai智能体设计模式">AI智能体设计模式</a></li>
+<li><a href="#证件信息提取关于专用模型与通用vlm的选择与思考" id="toc-证件信息提取关于专用模型与通用vlm的选择与思考">证件信息提取：关于专用模型与通用VLM的选择与思考</a></li>
+
 
 </ul></li>
 
@@ -505,6 +507,10 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 虽然有21个设计模式，其实其中很多都是将一整个谱系拆分成段，有点分散；当然平时写代码谁会对着模式表设计啊，对于设计模式的拆解，不是用来指导怎么写代码，而是有助于理清楚 agent 到底缺了哪块，也为了有个术语能够更好的与团队交流。
 
+### 证件信息提取：关于专用模型与通用VLM的选择与思考
+[原文 blog post](https://mp.weixin.qq.com/s/ekZWheuasvKxnQVGTE2_iw)
+
+本文记录一下开发端到端证件信息提取算法（Key Information Extraction，KIE）的一些思考，主要是印尼、菲律宾和泰国等国家的证件KIE，最近两年来一直在开发相关端到端的KIE算法，效果显著，这些算法不仅自己用，也供应给别的厂商，比如一些云平台服务提供商、跨境企业、东南亚本国企业等等。
 
 ## 视觉大模型（LVM）
 ### 视觉大模型：SAM（Segment Anything）及示例
