@@ -83,7 +83,7 @@ id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：L
 <li><a href="#基金板块股市行情分析助手技能聊聊天就能长知识" id="toc-基金板块股市行情分析助手技能聊聊天就能长知识">基金板块股市行情分析助手技能，聊聊天就能长知识</a></li>
 <li><a href="#ai智能体设计模式" id="toc-ai智能体设计模式">AI智能体设计模式</a></li>
 <li><a href="#证件信息提取关于专用模型与通用vlm的选择与思考" id="toc-证件信息提取关于专用模型与通用vlm的选择与思考">证件信息提取：关于专用模型与通用VLM的选择与思考</a></li>
-
+<li><a href="#股票投资技术指标详解" id="toc-股票投资技术指标详解">股票投资技术指标详解</a></li>
 
 </ul></li>
 
@@ -511,6 +511,13 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 [原文 blog post](https://mp.weixin.qq.com/s/ekZWheuasvKxnQVGTE2_iw)
 
 本文记录一下开发端到端证件信息提取算法（Key Information Extraction，KIE）的一些思考，主要是印尼、菲律宾和泰国等国家的证件KIE，最近两年来一直在开发相关端到端的KIE算法，效果显著，这些算法不仅自己用，也供应给别的厂商，比如一些云平台服务提供商、跨境企业、东南亚本国企业等等。
+
+### 股票投资技术指标详解
+[原文 blog post](https://mp.weixin.qq.com/s/XGGSoyCVgFMZWfx7_WrO0g)
+
+分享常用的股票投资技术指标，如何判断逃顶与抄底，详细讲解每个参数的使用以及趋势判断。
+
+
 
 ## 视觉大模型（LVM）
 ### 视觉大模型：SAM（Segment Anything）及示例
