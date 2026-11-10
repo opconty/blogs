@@ -86,7 +86,7 @@ id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：L
 <li><a href="#基金板块股市行情分析助手技能聊聊天就能长知识" id="toc-基金板块股市行情分析助手技能聊聊天就能长知识">基金板块股市行情分析助手技能，聊聊天就能长知识</a></li>
 <li><a href="#ai智能体设计模式" id="toc-ai智能体设计模式">AI智能体设计模式</a></li>
 <li><a href="#证件信息提取关于专用模型与通用vlm的选择与思考" id="toc-证件信息提取关于专用模型与通用vlm的选择与思考">证件信息提取：关于专用模型与通用VLM的选择与思考</a></li>
-<li><a href="#股票投资技术指标详解" id="toc-股票投资技术指标详解">股票投资技术指标详解</a></li>
+<li><a href="#opencode私域数据库让agent自动写sql查询数据库回答问题" id="toc-opencode私域数据库让agent自动写sql查询数据库回答问题">OpenCode + 私域数据库：让Agent自动写SQL查询数据库回答问题</a></li>
 
 </ul></li>
 
@@ -252,6 +252,7 @@ id="toc-文献整理及论文笔记管理">文献整理及论文笔记管理</a>
 <li><a href="#其他others" id="toc-其他others">其他（Others）</a>
 <ul>
 <li><a href="#基金基础知识更加欢快的养基" id="toc-基金基础知识更加欢快的养基">基金基础知识，更加欢快的养基</a></li>
+<li><a href="#股票投资技术指标详解" id="toc-股票投资技术指标详解">股票投资技术指标详解</a></li>
 <li><a href="#latex备忘录" id="toc-latex备忘录">Latex备忘录</a></li>
 <li><a href="#how-to-plot-pie-chart-in-latex"
 id="toc-how-to-plot-pie-chart-in-latex">How to plot pie chart in LaTex</a></li>
@@ -521,12 +522,11 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 本文记录一下开发端到端证件信息提取算法（Key Information Extraction，KIE）的一些思考，主要是印尼、菲律宾和泰国等国家的证件KIE，最近两年来一直在开发相关端到端的KIE算法，效果显著，这些算法不仅自己用，也供应给别的厂商，比如一些云平台服务提供商、跨境企业、东南亚本国企业等等。
 
-### 股票投资技术指标详解
-[原文 blog post](https://mp.weixin.qq.com/s/XGGSoyCVgFMZWfx7_WrO0g)
+### OpenCode + 私域数据库：让Agent自动写SQL查询数据库回答问题
+[原文 blog post](https://mp.weixin.qq.com/s/g72UBKnlW7BfnDOzfFZ_Sg)
 
-分享常用的股票投资技术指标，如何判断逃顶与抄底，详细讲解每个参数的使用以及趋势判断。
-
-
+以前想从数据库里获取一个统计结果，通常需要打开数据库客户端、查看表结构、编写 SQL、执行查询，再整理结果。现在，我尝试把这套流程交给 AI Agent：通过 OpenCode + MCP 接入本地 SQLite 数据库，让 Agent 自己理解问题、读取表结构、生成 SQL、执行查询，并根据真实结果给出分析。
+本文记录从需求梳理、架构设计、MCP Server 实现，到专用 SQL Agent、快捷命令和本地测试的完整过程。
 
 ## 视觉大模型（LVM）
 ### 视觉大模型：SAM（Segment Anything）及示例
@@ -795,6 +795,11 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/hdfcCJdVFgCoGvjhc584iw)
 
 > 作为十几年的养基散户，有必要整理一下基金相关的基础知识：啥是基金呢？有哪些分类呢？各自又有啥特点呢？什么样的基金适合长期持有呢？啥是指数？啥是ETF？QDII是啥？简单介绍一下网格法和应用例子。
+
+### 股票投资技术指标详解
+[原文 blog post](https://mp.weixin.qq.com/s/XGGSoyCVgFMZWfx7_WrO0g)
+
+分享常用的股票投资技术指标，如何判断逃顶与抄底，详细讲解每个参数的使用以及趋势判断。
 
 ### Latex备忘录
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/z1585WXTv6qCNEc1Ga92nw)
