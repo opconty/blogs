@@ -86,7 +86,7 @@ id="toc-大模型微调lora和dora的原理及pytorch实现">大模型微调：L
 <li><a href="#基金板块股市行情分析助手技能聊聊天就能长知识" id="toc-基金板块股市行情分析助手技能聊聊天就能长知识">基金板块股市行情分析助手技能，聊聊天就能长知识</a></li>
 <li><a href="#ai智能体设计模式" id="toc-ai智能体设计模式">AI智能体设计模式</a></li>
 <li><a href="#证件信息提取关于专用模型与通用vlm的选择与思考" id="toc-证件信息提取关于专用模型与通用vlm的选择与思考">证件信息提取：关于专用模型与通用VLM的选择与思考</a></li>
-<li><a href="#opencode私域数据库让agent自动写sql查询数据库回答问题" id="toc-opencode私域数据库让agent自动写sql查询数据库回答问题">OpenCode + 私域数据库：让Agent自动写SQL查询数据库回答问题</a></li>
+<li><a href="#opencode私域数据库让agent自动写sql查询数据库回答问题" id="toc-opencode私域数据库让agent自动写sql查询数据库回答问题">OpenCode+私域数据库：让Agent自动写SQL查询数据库回答问题</a></li>
 
 </ul></li>
 
@@ -123,6 +123,8 @@ id="toc-stable-diffusion笔记及使用示例">Stable Diffusion笔记及使用�
 id="toc-ltx-23-vs-wan22-vs-longcat三大开源视频生成模型实测对比">LTX-2.3 vs Wan2.2 vs Longcat：三大开源视频生成模型实测对比</a></li>
 <li><a href="#我做了一个ai自动剪辑系统长视频一键生成高光短视频"
 id="toc-我做了一个ai自动剪辑系统长视频一键生成高光短视频">我做了一个AI自动剪辑系统：长视频一键生成高光短视频</a></li>
+<li><a href="#从素材到成片如何实现全自动视频生产"
+id="toc-从素材到成片如何实现全自动视频生产">从素材到成片：如何实现全自动视频生产</a></li>
 <li><a href="#读完最前沿的agent论文后发现2026年ai的研究方向已经变了"
 id="toc-读完最前沿的agent论文后发现2026年ai的研究方向已经变了">读完最前沿的Agent论文后，发现2026年AI的研究方向已经变了</a></li>
 <li><a href="#视频生成模型ltx最佳实践为什么你的ai视频没有电影感" id="toc-视频生成模型ltx最佳实践为什么你的ai视频没有电影感">视频生成模型LTX最佳实践：为什么你的AI视频没有电影感？</a></li>
@@ -522,7 +524,7 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 本文记录一下开发端到端证件信息提取算法（Key Information Extraction，KIE）的一些思考，主要是印尼、菲律宾和泰国等国家的证件KIE，最近两年来一直在开发相关端到端的KIE算法，效果显著，这些算法不仅自己用，也供应给别的厂商，比如一些云平台服务提供商、跨境企业、东南亚本国企业等等。
 
-### OpenCode + 私域数据库：让Agent自动写SQL查询数据库回答问题
+### OpenCode+私域数据库：让Agent自动写SQL查询数据库回答问题
 [原文 blog post](https://mp.weixin.qq.com/s/g72UBKnlW7BfnDOzfFZ_Sg)
 
 以前想从数据库里获取一个统计结果，通常需要打开数据库客户端、查看表结构、编写 SQL、执行查询，再整理结果。现在，我尝试把这套流程交给 AI Agent：通过 OpenCode + MCP 接入本地 SQLite 数据库，让 Agent 自己理解问题、读取表结构、生成 SQL、执行查询，并根据真实结果给出分析。
@@ -590,6 +592,13 @@ CLIP(Contrastive Language-Image Pre-Training) 在论文 “Learning Transferable
 
 ### 我做了一个AI自动剪辑系统：长视频一键生成高光短视频
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/aTFmyresSfluwajBe8hPDw)
+
+最近我做了一个挺有意思的项目，它解决的是一个很多内容创作者都遇到的问题：长视频内容很多，但真正被传播的，往往只是其中最精彩的几分钟，比如一期3小时播客、一场知识分享会、一段深度访谈、一场直播回放，这些内容里通常藏着很多高价值观点，但人工去看完整视频、找高光、剪片段、配字幕，成本太高了，也太累了。
+
+### 从素材到成片：如何实现全自动视频生产
+[:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/n6RYyY_5PFAuyK3nyA9r2Q)
+
+跟之前分享的AI全自动视频剪辑不同，本文重点在基于素材（比如图片、音频、视频、字幕、文本等）自动拼接成片，这是两种不同的视频制作方法。
 
 ### 读完最前沿的Agent论文后，发现2026年AI的研究方向已经变了
 [:page_facing_up:原文 blog post](https://mp.weixin.qq.com/s/bE3ONgpqv_CTZnWBgVNCMA)
